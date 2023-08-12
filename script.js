@@ -10,3 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+        const aboutDetails = document.querySelector(".about-details");
+        aboutDetails.classList.add("animate__animated", "animate__fadeInUp");
+    });
+
+
+
