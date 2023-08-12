@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         button.addEventListener("click", () => {
             content.classList.toggle("hide");
+            if (!content.classList.contains("hide")) {
+                content.classList.add("animate__animated", "animate__fadeIn");
+            } else {
+                content.classList.remove("animate__animated", "animate__fadeIn");
+            }
         });
     });
+
+    const aboutDetails = document.querySelector(".about-details");
+    aboutDetails.classList.add("animate__animated", "animate__fadeInUp");
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-        const aboutDetails = document.querySelector(".about-details");
-        aboutDetails.classList.add("animate__animated", "animate__fadeInUp");
-    });
-
-
-
