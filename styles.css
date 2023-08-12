@@ -133,8 +133,10 @@ body {
 
 .skill {
     width: calc(33.33% - 20px);
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0.5rem;
+    
+    padding: 0.5rem;
+    padding-top: 0;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -147,7 +149,7 @@ body {
 }
 
 .skill-level {
-    height: 15px;
+    height: 10px;
     background-color: #e0e0e0;
     border-radius: 8px;
     position: relative;
