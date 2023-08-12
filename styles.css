@@ -125,6 +125,18 @@ body {
         margin-top: 1rem;
     }
 
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
 /* Rest of the styles remain the same */
 
 
