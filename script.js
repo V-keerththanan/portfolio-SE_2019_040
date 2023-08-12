@@ -25,4 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     animateLetters.forEach((letter, index) => {
         letter.style.animation = `fadeInUp 2.5s ${index * 0.1}s ease-in-out both`;
     });
+
+  
 });

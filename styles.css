@@ -236,6 +236,23 @@ body {
     background: linear-gradient(45deg, #FFA000, #F44336); /* Gradient background on hover */
 }
 
+.see-more-projects {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gradient-text-link {
+    background: linear-gradient(45deg, #FFC107, #FF5722);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+
+
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
