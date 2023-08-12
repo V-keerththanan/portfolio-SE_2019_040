@@ -67,6 +67,49 @@ body {
     transform: scale(1.1);
 }
 
+
+.about-section {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-details {
+    max-width: 60%;
+}
+
+.about-details h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-details p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .nav-list {
