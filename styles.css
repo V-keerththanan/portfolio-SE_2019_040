@@ -77,6 +77,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .about-content {
@@ -136,8 +137,9 @@ body {
 
 /* Skills Section Styles */
 .skills-section {
-    padding: 2rem 0;
+    /* padding: 4rem 0; */
     text-align: center;
+    margin-top: 0rem;
 }
 
 .section-heading h2 {
@@ -183,6 +185,58 @@ body {
     border-radius: 8px;
 }
 
+
+/* Projects Section Styles */
+.projects-section {
+   
+    text-align: center;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: calc(60% - 20px);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.github-link {
+    display: inline-block;
+    background: linear-gradient(45deg, #FFC107, #FF5722); /* Gradient background */
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.github-link:hover {
+    background: linear-gradient(45deg, #FFA000, #F44336); /* Gradient background on hover */
+}
+
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .nav-list {
@@ -206,6 +260,15 @@ body {
     .profile-image img {
         width: 120px;
         height: 120px;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: calc(100% - 40px);
     }
 
 }
