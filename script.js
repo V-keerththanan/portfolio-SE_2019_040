@@ -17,4 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const aboutDetails = document.querySelector(".about-details");
     aboutDetails.classList.add("animate__animated", "animate__fadeInUp");
+
+    const nameHeader = document.getElementById("animated-heading");
+    nameHeader.innerHTML = nameHeader.textContent.replace(/\S/g, "<span class='animate-letter'>$&</span>");
+
+    const animateLetters = document.querySelectorAll(".animate-letter");
+    animateLetters.forEach((letter, index) => {
+        letter.style.animation = `fadeInUp 2.5s ${index * 0.1}s ease-in-out both`;
+    });
 });
