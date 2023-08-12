@@ -113,6 +113,27 @@ body {
     color: #666;
 }
 
+.download-cv {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.cv-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #FFC107, #FF5722); 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cv-button:hover {
+    background: linear-gradient(45deg, #FFA000, #F44336); 
+}
+
 /* Skills Section Styles */
 .skills-section {
     padding: 2rem 0;
