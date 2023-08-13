@@ -25,6 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
     animateLetters.forEach((letter, index) => {
         letter.style.animation = `fadeInUp 2.5s ${index * 0.1}s ease-in-out both`;
     });
+    const footerSection = document.querySelector(".footer-section");
+    footerSection.classList.add("animate__animated", "animate__fadeIn");
+    const footerEmail = document.querySelector(".footer-email");
+    const footerPhone = document.querySelector(".footer-phone");
+    
+    setInterval(() => {
+        footerEmail.classList.toggle("animate__fadeInLeft");
+        footerPhone.classList.toggle("animate__fadeInRight");
+    }, 2000);
 
   
 });

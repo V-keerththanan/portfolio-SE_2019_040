@@ -308,6 +308,105 @@ body {
     background-color: #FFA000;
 }
 
+/* ... Previous styles ... */
+
+/* Footer Section Styles */
+.footer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-email,
+.footer-phone {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.footer-email a,
+.footer-phone a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+.footer-social a {
+    margin: 0 0.5rem;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-social a:hover {
+    transform: scale(1.2);
+}
+
+
+/* Education Section Styles */
+.education-section {
+    text-align: center;
+    background-color: #f2f2f2; 
+}
+
+.education-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education {
+    width: calc(50% - 20px);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.education h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.education p {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Styles for Education Section */
+@media screen and (max-width: 768px) {
+    .education {
+        width: calc(100% - 20px);
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+}
+
+/* Rest of the styles remain the same */
+
 
 
 
@@ -374,21 +473,71 @@ body {
         padding: 0.6rem 1rem;
         font-size: 0.9rem;
     }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo img {
+        margin-bottom: 1rem;
+    }
+
+    .footer-contact {
+        margin-top: 1rem;
+    }
+
+    .footer-social {
+        margin-top: 1rem;
+    }
+    .education-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education {
+        width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+    }
 
 }
 
 /* Rest of the styles remain the same */
 
-
-@keyframes fadeIn {
-    from {
+@keyframes fadeInLeft {
+    0% {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateX(-100px);
     }
-    to {
+    50% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100px);
     }
 }
 
-/* Rest of the styles remain the same */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+
+.footer-email {
+    animation: fadeInLeft 6s infinite;
+}
+
+.footer-phone {
+    animation: fadeInRight 6s infinite;
+}
