@@ -267,6 +267,7 @@ body {
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
 }
 
 .contact-form h2 {
@@ -354,6 +355,23 @@ body {
     }
     
     .project p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form form {
+        grid-template-columns: 1fr;
+    }
+
+    .submit-button {
+        padding: 0.6rem 1rem;
         font-size: 0.9rem;
     }
 
